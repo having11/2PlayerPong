@@ -235,10 +235,10 @@ bool checkCollisions(){
 }
 
 int checkWon(){
-	if(ballPosition[Y] <= 0){
+	if(ballPosition[Y] < 0){
 		return 2;
 	}
-	else if(ballPosition[Y] >= matrixY-1){
+	else if(ballPosition[Y] > matrixY-1){
 		return 1;
 	}
 	else {return 0;}
